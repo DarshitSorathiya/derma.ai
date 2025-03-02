@@ -43,4 +43,6 @@ const toggleDoctorAvailability = asyncHandler(async (req, res) => {
     );
 });
 
+
+
 export { toggleDoctorAvailability, getDoctorAppointments };

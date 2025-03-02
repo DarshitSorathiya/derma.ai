@@ -52,6 +52,8 @@ const userSchema = new mongoose.Schema(
       required: [true, "Password must required"],
     },
 
+    coins: { type: Number, default: 0 },
+
     refreshToken: {
       type: String,
     },

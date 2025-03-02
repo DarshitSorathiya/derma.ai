@@ -7,7 +7,7 @@ const skinDiseaseSchema = new mongoose.Schema(
       ref: "User",
       required: true,
     },
-    
+
     skinImage: {
       type: String,
       required: true,
@@ -21,10 +21,6 @@ const skinDiseaseSchema = new mongoose.Schema(
 
     medicalAdvice: { type: [String] },
 
-    recommendedHospitals: {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "Hospital",
-    },
   },
   { timestamps: true }
 );

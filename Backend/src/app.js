@@ -25,7 +25,7 @@ app.use(cookieParser());
 
 app.use("/api/users", userRouter);
 
-// app.use("/api/users/appointment" , appointmentRoutes)
+app.use("/api/users/appointment" , appointmentRoutes)
 
 app.use("/api/appointments", appointmentRoutes);
 

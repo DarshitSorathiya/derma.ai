@@ -25,8 +25,8 @@ const schemas = {
 
 const cookieOptions = {
   httpOnly: true,
-  secure: process.env.NODE_ENV === "production",
-  sameSite: "strict",
+  secure: true,
+  sameSite: "None",
 };
 
 const register = (schemaType) =>
@@ -222,9 +222,9 @@ const login = (schemaType) =>
       schema._id
     );
 
-    const loggedIn = await Schema.findById(schema._id)
-      .select("-password -refreshToken")
-      .lean();
+    const loggedIn = await Schema.findById(schema._id).select(
+      "-password -refreshToken"
+    );
 
     if (!loggedIn) {
       throw new ApiError(500, `Error fetching ${Schema} data`);
