@@ -27,7 +27,7 @@ const upload = multer({ storage }).single("skinImage");
 const runMLModel = (imagePath) => {
   return new Promise((resolve, reject) => {
     const pythonProcess = spawn("python", [
-      "C:/Users/Darshit/Downloads/skin_disease_model.py",
+      "../skin_disease_model.ipynb",
       imagePath,
     ]);
 
