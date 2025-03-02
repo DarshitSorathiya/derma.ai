@@ -7,6 +7,7 @@ import doctorRoutes from "./routes/doctor.routes.js";
 import adminRoutes from "./routes/admin.routes.js";
 import pharmacistRoutes from "./routes/pharmacist.routes.js";
 import managerRoutes from "./routes/manager.routes.js";
+import chatbotRoutes from "./routes/chatbotRoutes.js";
 
 const app = express();
 
@@ -25,7 +26,7 @@ app.use(cookieParser());
 
 app.use("/api/users", userRouter);
 
-app.use("/api/users/appointment" , appointmentRoutes)
+app.use("/api/users/appointment", appointmentRoutes);
 
 app.use("/api/appointments", appointmentRoutes);
 
@@ -36,5 +37,7 @@ app.use("/api/pharmacist", pharmacistRoutes);
 app.use("/api/manager", managerRoutes);
 
 app.use("/api/admin", adminRoutes);
+
+app.use("/api/chatbot", chatbotRoutes);
 
 export { app };
