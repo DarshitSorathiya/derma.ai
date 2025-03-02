@@ -1,0 +1,34 @@
+{
+  "name": "odooxcharusat",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@react-google-maps/api": "^2.20.6",
+    "axios": "^1.8.1",
+    "framer-motion": "^12.4.7",
+    "fs": "^0.0.1-security",
+    "google-map-react": "^2.2.1",
+    "gsap": "^3.12.7",
+    "html-to-json": "^0.6.0",
+    "net": "^1.0.2",
+    "next": "15.1.7",
+    "next-auth": "^4.24.11",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^5.4.0",
+    "tls": "^0.0.1"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "eslint": "^9",
+    "eslint-config-next": "15.1.7",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1"
+  }
+}
