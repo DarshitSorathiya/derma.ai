@@ -1,5 +1,6 @@
 # derma.ai
 This project is build for odooXcharusat Hackathon 2025.
+Video Link : https://drive.google.com/drive/folders/18yr6YCTyeVj-bjsLF-YfiYamWoLR_PKT?usp=sharing
 
 ## Overview
 AI-powered Skin Disease Detection Platform—a web app allowing users to upload images for instant AI-based diagnosis, personalized treatment plans, nearby hospital/dermatologist 
